@@ -187,7 +187,7 @@ char Catalogo::getModo() const {
 
 int Catalogo::quantidadeLinha(int idItem) const {
     int n=0;
-    if (modo=='L') { if(idItem<0||idItem>=capacidad eLinhas)return 0; for(Celula*p=linhas[idItem];p;p=p->proximaLinha)++n; }
+    if (modo=='L') { if(idItem<0||idItem>=capacidadeLinhas)return 0; for(Celula*p=linhas[idItem];p;p=p->proximaLinha)++n; }
     else for(int i=0;i<tamanhoTripletas;i++) if(tripletas[i].idItem==idItem)++n;
     return n;
 }
