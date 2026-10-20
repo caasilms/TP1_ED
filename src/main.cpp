@@ -1,2 +1,7 @@
 #include "Sistema.h"
-int main(){ Sistema s; s.executar(); return 0; }
+int main()
+{
+    Sistema s;
+    s.executar();
+    return 0;
+}
